@@ -1,0 +1,9 @@
+<h1>メッセージ一覧</h1>
+<ul>
+  <% @firsts.each do |first| %>
+    <li><%= link_to first.id, first %> : <%= first.content %></li>
+  <% end %>
+</ul>
+
+
+<%= link_to '新規メッセージの投稿', new_first_path %>
